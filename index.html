@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <title>Annexode the cODEr | Article preview component</title>
+  </head>
+  <body>
+    <div id="container">
+      <div
+        class="flex flex-col bg-lightBlue-0 w-[375px] h-screen pt-[70px] pl-[20px] pr-[20px] pb-[30px] overflow-hidden"
+      >
+        <div class="rounded-lg relative overflow-hidden">
+          <div class="h-[210px] overflow-hidden">
+            <img
+              class="w-full -mt-[15px]"
+              src="./images/drawers.jpg"
+              alt="An image of a drawer"
+            />
+          </div>
+          <div class="bg-white pt-[20px] pl-[30px] pr-[30px] pb-[30px]">
+            <div>
+              <div class="text-green-900 font-semibold mb-3 leading-5">
+                <p>
+                  Shift the overall look and feel by adding these wonderful
+                  touches to furniture in your home
+                </p>
+              </div>
+              <div
+                class="text-gray-700 font-medium leading-[16px] text-[13px] max-w-[255px] mb-5"
+              >
+                <p>
+                  Ever been in a room and felt like something was missing?
+                  Perhaps it felt slightly bare and uninviting. I've got some
+                  simple tips to help you make any room feel complete.
+                </p>
+              </div>
+
+              <div class="flex items-center">
+                <div class="mr-3">
+                  <img
+                    class="w-[30px] rounded-full mt-2"
+                    src="./images/avatar-michelle.jpg"
+                    alt="An avatar image of a white woman with long silver white hair"
+                  />
+                </div>
+                <div class="leading-4">
+                  <h1 class="text-[13px] font-medium text-green-900">
+                    Michelle Appleton
+                  </h1>
+                  <h2 class="text-[13px] font-normal text-gray-400">
+                    28 Jun 2020
+                  </h2>
+                </div>
+                <div id="primary-btn" 
+                class="relative flex justify-center items-center ml-[30px] p-1 w-[25px] h-[25px] bg-slate-200 rounded-3xl"
+              >
+                <a  onclick="toggle()" href="#"
+                  ><img
+                    class="w-[12px]"
+                    src="./images/icon-share.svg"
+                    alt="An icon displaying a share button"
+                /></a>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- try here -->
+          <div
+            id="share"
+            class="absolute bottom-0 bg-blueGray-0 w-[400px] p-[10px] -ml-[35px] h-[70px] flex items-center"
+          >
+            <div
+              class="flex justify-center items-center gap-[20px] -mt-[px] ml-[25px]"
+            >
+              <h1 class="text-gray-300 ml-8 mr-4 text-[12px] tracking-widest">
+                SHARE
+              </h1>
+              <img
+                class="w-[18px]"
+                src="./images/icon-facebook.svg"
+                alt="An icon of facebook webPage"
+              />
+              <img
+                class="w-[18px]"
+                src="./images/icon-twitter.svg"
+                alt="An icon of twitter displayed by bird"
+              />
+              <img
+                class="w-[18px]"
+                src="./images/icon-pinterest.svg"
+                alt="An icon of Pinterest"
+              />
+              <div
+                class="relative flex justify-center items-center ml-[30px] p-1 w-[25px] h-[25px] bg-slate-200 rounded-3xl"
+              >
+                <a onclick="toggle()" href="#"
+                  ><img
+                    class="w-[12px]"
+                    src="./images/icon-share.svg"
+                    alt="An icon displaying a share button"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggle() {
+        var x = document.getElementById("share");
+        if (x.style.display === "none") {
+          x.style.display = "";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
